@@ -19,4 +19,7 @@ vim.keymap.set("n", ",<cr>", "<cmd>nohls<cr>") -- Navigate to the split window o
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
+-- [[ Set undotree keymap ]]
+vim.keymap.set('n', '<Space>uu', '<cmd>UndotreeToggle<cr>')
+
 

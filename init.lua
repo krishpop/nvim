@@ -41,9 +41,6 @@ require('lualine').setup {
   }
 }
 
--- [[ Set undotree keymap ]]
-vim.keymap.set('n', '<Space>uu', '<cmd>UndotreeToggle<cr>')
-
 -- [[ Configure Telescope ]]
 require("plugin_config.telescope")
 
