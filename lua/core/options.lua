@@ -41,6 +41,9 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
 vim.o.background = 'dark'
 
+vim.o.ls = 0
+vim.o.ch = 0
+
 if vim.g.neovide then
     -- Put anything you want to happen only in Neovide here
   -- Helper function for transparency formatting
