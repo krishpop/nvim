@@ -141,5 +141,6 @@ require('lazy').setup({
       }
     end
   },
+  { 'voldikss/vim-floaterm' },
   { import = 'custom.plugins' },
 }, {})
