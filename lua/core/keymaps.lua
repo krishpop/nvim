@@ -14,6 +14,7 @@ vim.keymap.set("n", "sl", "<C-w>l") -- Navigate to the split window on the immed
 vim.keymap.set("n", "<C-n>", "<cmd>bn<cr>") -- Navigate to the split window on the immediate right.
 vim.keymap.set("n", "<C-p>", "<cmd>bp<cr>") -- Navigate to the split window on the immediate right.
 vim.keymap.set("n", ",<cr>", "<cmd>nohls<cr>") -- Navigate to the split window on the immediate right.
+vim.keymap.set("t", "<C-k><C-j>", "<C-\\><C-n>") -- Exit terminal mode
 
 -- Remap for dealing with word wrap
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })

@@ -142,5 +142,12 @@ require('lazy').setup({
     end
   },
   { 'voldikss/vim-floaterm' },
+  { 'Shatur/neovim-session-manager',
+    config = function ()
+      require('session_manager').setup({
+          sessions_dir = require('plenary.path'):new(vim.fn.stdpath('data'), 'sessions'),
+      })
+    end
+  },
   { import = 'custom.plugins' },
 }, {})
