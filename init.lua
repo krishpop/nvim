@@ -62,7 +62,7 @@ require("plugin_config.nvim-cmp")
 -- MY CUSTOM PACKAGES
 -- [[ Setup lsp_copilot ]]
 local lsp_copilot = require('lsp_copilot')
-vim.keymap.set('n', '<leader>vq', lsp_copilot.select, { desc = 'Select current function' })
+-- vim.keymap.set('n', '<leader>vq', lsp_copilot.select, { desc = 'Select current function' })
 
 
 -- The line beneath this is called `modeline`. See `:help modeline`
