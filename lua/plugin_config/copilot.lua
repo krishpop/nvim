@@ -1,5 +1,5 @@
 
-copilot = require("copilot")
+local copilot = require("copilot")
 
 copilot.setup {
   panel = {
@@ -13,7 +13,7 @@ copilot.setup {
       open = "<M-CR>",
     },
     layout = {
-      position = "bottom", -- | top | left | right
+      position = "right", -- | top | left | right
       ratio = 0.4,
     },
   },

@@ -47,6 +47,9 @@ require("plugin_config.telescope")
 -- [[ Configure Treesitter ]]
 require("plugin_config.nvim-treesitter")
 
+-- [[ Configure Treesitter ]]
+require("plugin_config.nvim-osc52")
+
 -- Diagnostic keymaps
 require("plugin_config.diagnostics")
 
@@ -61,8 +64,7 @@ require("plugin_config.nvim-cmp")
 
 -- MY CUSTOM PACKAGES
 -- [[ Setup lsp_copilot ]]
-local lsp_copilot = require('lsp_copilot')
--- vim.keymap.set('n', '<leader>vq', lsp_copilot.select, { desc = 'Select current function' })
+-- local lsp_copilot = require('lsp_copilot')
 
 
 -- The line beneath this is called `modeline`. See `:help modeline`
