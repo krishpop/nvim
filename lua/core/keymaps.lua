@@ -4,7 +4,7 @@
 -- Keymaps for better default experience
 -- See `:help vim.keymap.set()`
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
-vim.keymap.set('n', '<Space>d', '<cmd>bp|bd #<cr>')
+vim.keymap.set('n', '<Space>x', '<cmd>bp|bd #<cr>')
 vim.keymap.set('n', '<Space>qd', '<cmd>q<cr>')
 vim.keymap.set('n', '<Space>ww', '<cmd>w<cr>', { silent = true })
 vim.keymap.set("n", "sh", "<C-w>h") -- Navigate to the split window on the immediate left.
