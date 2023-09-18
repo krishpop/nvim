@@ -124,6 +124,12 @@ require('lazy').setup({
     event = "InsertEnter",
   },
   { "ofseed/lualine-copilot" },
+  {
+    'mg979/vim-visual-multi',
+    config = function()
+      vim.g.VM_maps = { ['Find Under'] = '<C-m>', ['Find Subword Under'] = '<C-m>'}
+    end
+  },   -- multiselect 
   { 'jose-elias-alvarez/null-ls.nvim' },
   {
     'jose-elias-alvarez/buftabline.nvim',
