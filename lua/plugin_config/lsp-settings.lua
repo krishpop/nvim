@@ -99,12 +99,26 @@ mason_lspconfig.setup_handlers {
 }
 
 -- [[ Configure null-ls ]]
+
+local lsp_formatting = function(bufnr)
+    vim.lsp.buf.format({
+        filter = function(client)
+            -- apply whatever logic you want (in this example, we'll only use null-ls)
+            return client.name == "null-ls"
+        end,
+        bufnr = bufnr,
+    })
+end
+
+
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 local null_ls = require("null-ls")
 null_ls.setup({
     sources = {
+        null_ls.builtins.formatting.ruff,
+        null_ls.builtins.formatting.black,
         null_ls.builtins.formatting.black.with({
-          extra_args = { "--line-length", "120" },
+          -- extra_args = { "--line-length", "120", "--fast" },
           condition = function(utils)
             return utils.root_has_file('pyproject.toml') -- change file extension if you use something else
             end,
@@ -119,7 +133,9 @@ null_ls.setup({
                 buffer = bufnr,
                 callback = function()
                     -- on 0.8, you should use vim.lsp.buf.format({ bufnr = bufnr }) instead
-                    vim.lsp.buf.format( { bufnr = bufnr } )
+                    -- vim.lsp.buf.format( { bufnr = bufnr } )
+                    -- lsp_formatting(bufnr)
+                    vim.lsp.buf.format({ async = false })
                 end,
             })
         end
