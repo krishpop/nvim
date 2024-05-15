@@ -52,16 +52,16 @@ end
 local servers = {
   -- clangd = {},
   -- gopls = {},
-  pyright = { python = {
-      analysis = {
-        autoSearchPaths = true,
-        useLibraryCodeForTypes = true,
-        typeCheckingMode = 'off',
-        diagnosticMode = 'openFilesOnly',
-        reportUnusedImport = false,
-      },
-    },
-},
+  -- pyright = { python = {
+  --     analysis = {
+  --       autoSearchPaths = true,
+  --       useLibraryCodeForTypes = true,
+  --       typeCheckingMode = 'off',
+  --       diagnosticMode = 'openFilesOnly',
+  --       reportUnusedImport = false,
+  --     },
+  --   },
+-- },
   -- rust_analyzer = {},
   -- tsserver = {},
 
