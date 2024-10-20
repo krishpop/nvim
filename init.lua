@@ -24,7 +24,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- [[ Configure copilot ]]
-require("plugin_config.copilot")
+-- require("plugin_config.copilot")
 
 -- [[ Configure symbols-outline ]]
 require("symbols-outline").setup()
@@ -33,7 +33,7 @@ require("symbols-outline").setup()
 require('lualine').setup {
   sections = {
     lualine_x = {
-      "copilot",
+      -- "copilot",
       "filetype",
       "fileformat",
       "encoding",

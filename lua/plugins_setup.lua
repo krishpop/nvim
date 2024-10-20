@@ -116,12 +116,12 @@ require('lazy').setup({
   -- Additional Plugins
   -- require 'kickstart.plugins.autoformat',
   -- require 'kickstart.plugins.debug',
-  {
-    'zbirenbaum/copilot.lua',
-    cmd = "Copilot",
-    event = "InsertEnter",
-  },
-  { "ofseed/lualine-copilot" },
+  -- {
+  --   'zbirenbaum/copilot.lua',
+  --   cmd = "Copilot",
+  --   event = "InsertEnter",
+  -- },
+  -- { "ofseed/lualine-copilot" },
   { 'jose-elias-alvarez/null-ls.nvim' },
   {
     'jose-elias-alvarez/buftabline.nvim',
