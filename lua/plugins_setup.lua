@@ -80,10 +80,8 @@ require('lazy').setup({
     'lukas-reineke/indent-blankline.nvim',
     -- Enable `lukas-reineke/indent-blankline.nvim`
     -- See `:help indent_blankline.txt`
-    opts = {
-      char = '┊',
-      show_trailing_blankline_indent = false,
-    },
+    main = 'ibl',
+    opts = {},
   },
 
   -- "gc" to comment visual regions/lines
@@ -118,12 +116,12 @@ require('lazy').setup({
   -- Additional Plugins
   -- require 'kickstart.plugins.autoformat',
   -- require 'kickstart.plugins.debug',
-  {
-    'zbirenbaum/copilot.lua',
-    cmd = "Copilot",
-    event = "InsertEnter",
-  },
-  { "ofseed/lualine-copilot" },
+  -- {
+  --   'zbirenbaum/copilot.lua',
+  --   cmd = "Copilot",
+  --   event = "InsertEnter",
+  -- },
+  -- { "ofseed/lualine-copilot" },
   { 'jose-elias-alvarez/null-ls.nvim' },
   {
     'jose-elias-alvarez/buftabline.nvim',
